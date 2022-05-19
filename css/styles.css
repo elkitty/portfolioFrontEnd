@@ -1,0 +1,139 @@
+
+
+
+
+/* .top_cont_outer {
+    position: relative;
+    background: url(../img/home2.jpg) no-repeat;
+
+} */
+
+/* .card {
+    padding-top: 20px;
+    margin: 10px 0 20px 0;
+    background-color: rgba(214, 224, 226, 0.2);
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} */
+.card.hovercard {
+    /* background-color: navajowhite; */
+    /* position: relative;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    margin: 0; */
+}
+
+ .cardheader {
+    background-image: url(https://picsum.photos/id/1/1440/320);
+    /* background: rgb(118,130,130);
+    background: linear-gradient(0deg, rgba(118,130,130,0.20351890756302526) 0%, rgba(49,75,92,0.2007177871148459) 100%); */
+    background-size: cover;
+    height: 333px;
+}
+
+ .avatar {
+    position: relative;
+    top: -80px;
+    width: 150px;
+    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    right: 0px;
+    left: 0px;
+    /* margin: 0 auto; */
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.5);
+}
+
+@media (max-width: 540px){
+    .avatar {
+        margin: 0 auto;
+        }
+    }
+
+.card.hovercard .avatar img {
+    width: 165px;
+    height: auto;
+    max-width: 165px;
+    margin-left: -11px;
+}
+
+.card.hovercard .info {
+    padding: 0 8px 22px;
+    top: -50px;
+    position: relative;
+}
+
+
+
+
+
+.bd-edit {
+    position: relative;
+    display: none;
+    float: right;
+}
+.bd-edit + .highlight {
+    margin-top: 0;
+}
+
+    .bd-edit {
+        display: block;
+    }
+
+.btn-edit, .btn-delete {
+    position: absolute;
+    top: -0.9rem;
+    right: 3.3rem;
+    z-index: 10;
+    display: block;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.6em;
+    color: #0d6efd;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 1.5rem;
+}
+.btn-edit {
+    right: 1rem;
+
+}
+.btn-edit.btn-edit-profile {
+    top: 1.6rem;
+    right: -9rem;
+}
+
+.btn-edit:hover,
+.btn-edit:focus
+.btn-delete:hover,
+.btn-delete:focus {
+    color: #fff;
+    background-color: #0d6efd;
+}
+
+
+@media (max-width: 540px){
+#experiencia img {
+    margin-bottom: 1.5rem!important;
+    }
+}
+
+
+
+
+
+
+
+
+
