@@ -1,1 +1,86 @@
 /* You can add global styles to this file, and also import other style files */
+
+.cardheader {
+  background-image: url(https://picsum.photos/id/1/1440/320);
+  background-size: cover;
+  height: 333px;
+}
+.avatar {
+  position: relative;
+  top: -80px;
+  width: 150px;
+  height: 150px;
+  max-width: 150px;
+  max-height: 150px;
+  right: 0px;
+  left: 0px;
+  /* margin: 0 auto; */
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid rgba(255,255,255,0.5);
+}
+@media (max-width: 540px){
+  .avatar {
+      margin: 0 auto;
+      }
+  }
+
+.card.hovercard .avatar img {
+  width: 165px;
+  height: auto;
+  max-width: 165px;
+  margin-left: -11px;
+}
+
+.card.hovercard .info {
+  padding: 0 8px 22px;
+  top: -50px;
+  position: relative;
+}
+
+.bd-edit {
+  position: relative;
+  display: none;
+  float: right;
+}
+
+.bd-edit + .highlight {
+  margin-top: 0;
+}
+
+.bd-edit {
+  display: block;
+}
+.btn-edit, .btn-delete {
+  position: absolute;
+  top: -0.9rem;
+  right: 3.3rem;
+  z-index: 10;
+  display: block;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.6em;
+  color: #0d6efd;
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 1.5rem;
+}
+.btn-edit {
+  right: 1rem;
+
+}
+.btn-edit.btn-edit-profile {
+  top: 1.6rem;
+  right: -9rem;
+}
+.btn-edit:hover,
+.btn-edit:focus
+.btn-delete:hover,
+.btn-delete:focus {
+  color: #fff;
+  background-color: #0d6efd;
+}
+@media (max-width: 540px){
+#experiencia img {
+  margin-bottom: 1.5rem!important;
+  }
+}

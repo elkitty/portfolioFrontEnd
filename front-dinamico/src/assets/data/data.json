@@ -1,0 +1,68 @@
+{
+  "name": "Mariano Mello",
+  "backImage": "https://picsum.photos/id/1/2560/210",
+  "image": "https://picsum.photos/id/1/200/200",
+  "position": "Desarrollador Front End en Digital Lab",
+  "company": {
+      "name": "Digital Lab",
+      "img": "https://picsum.photos/id/1/200/200",
+      "url": "#"
+  },
+  "school": {
+      "name": "UBA",
+      "img": "https://picsum.photos/id/1/200/200",
+      "url": "#"
+  },
+  "location": "Buenos Aires, Argentina",
+  "about": "Soy un desarrollador Frontend con experiencia en la industria creando sitios Web.",
+  "experience": [{
+      "position": "FrontEnd Developer",
+      "company": "Apple",
+      "img": "https://picsum.photos/id/1/100/100",
+      "mode": "remoto full time",
+      "start": "marzo 2019",
+      "end": "Actualidad",
+      "timeElapsed": "2 años y 6 meses"
+      }
+  ],
+  "education": [{
+          "school": "Udemy",
+          "title": "FrontEnd Web Developer",
+          "img": "https://picsum.photos/id/1/100/100",
+          "career": "Git a Web Developer",
+          "score": 0,
+          "start": "2017",
+          "end": "2018"
+      },
+      {
+          "school": "Escuela Industria",
+          "title": "Dirección de arte digital",
+          "img": "https://picsum.photos/id/1/100/100",
+          "career": "Dirección de Arte",
+          "score": 0,
+          "start": "2012",
+          "end": "2013"
+      }
+  ],
+  "aptitudes": [{
+          "progressText": "Resolución de problemas",
+          "progress": {"aria-valuenow, style, data-original-title, tooltip-inner": 8 }
+      },
+          {"progressText": "FrontEnd",
+          "progress": {"aria-valuenow, style, data-original-title, tooltip-inner": 35 }
+      }
+  ],
+  "projects": [{
+      "Name": "Spotify",
+      "tasks": "Participación en el desarrollo del FrontEnd de la plataforma para Latam"
+  },
+  {
+      "Name": "Apple",
+      "tasks": "Participación en el desarrollo del FrontEnd de la página web para Latam"
+  }
+]
+
+}
+
+
+

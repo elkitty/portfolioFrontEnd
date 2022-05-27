@@ -1,13 +1,8 @@
-
-
-
-
 /* .top_cont_outer {
     position: relative;
     background: url(../img/home2.jpg) no-repeat;
 
 } */
-
 /* .card {
     padding-top: 20px;
     margin: 10px 0 20px 0;
@@ -32,16 +27,12 @@
     text-align: center;
     margin: 0; */
 }
-
- .cardheader {
+.cardheader {
     background-image: url(https://picsum.photos/id/1/1440/320);
-    /* background: rgb(118,130,130);
-    background: linear-gradient(0deg, rgba(118,130,130,0.20351890756302526) 0%, rgba(49,75,92,0.2007177871148459) 100%); */
     background-size: cover;
     height: 333px;
 }
-
- .avatar {
+.avatar {
     position: relative;
     top: -80px;
     width: 150px;
@@ -55,7 +46,6 @@
     border-radius: 50%;
     border: 5px solid rgba(255,255,255,0.5);
 }
-
 @media (max-width: 540px){
     .avatar {
         margin: 0 auto;
@@ -75,23 +65,19 @@
     position: relative;
 }
 
-
-
-
-
 .bd-edit {
     position: relative;
     display: none;
     float: right;
 }
+
 .bd-edit + .highlight {
     margin-top: 0;
 }
 
-    .bd-edit {
-        display: block;
-    }
-
+.bd-edit {
+    display: block;
+}
 .btn-edit, .btn-delete {
     position: absolute;
     top: -0.9rem;
@@ -113,7 +99,6 @@
     top: 1.6rem;
     right: -9rem;
 }
-
 .btn-edit:hover,
 .btn-edit:focus
 .btn-delete:hover,
@@ -121,8 +106,6 @@
     color: #fff;
     background-color: #0d6efd;
 }
-
-
 @media (max-width: 540px){
 #experiencia img {
     margin-bottom: 1.5rem!important;
