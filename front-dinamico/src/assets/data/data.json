@@ -1,8 +1,8 @@
 {
   "name": "Mariano Mello",
   "backImage": "https://picsum.photos/id/1/2560/210",
-  "image": "https://picsum.photos/id/1/200/200",
-  "position": "Desarrollador Front End en Digital Lab",
+  "image": "https://i.imgur.com/pUSfuMQ.jpg",
+  "position": "Web Developer",
   "company": {
       "name": "Digital Lab",
       "img": "https://picsum.photos/id/1/200/200",
@@ -13,8 +13,8 @@
       "img": "https://picsum.photos/id/1/200/200",
       "url": "#"
   },
-  "location": "Buenos Aires, Argentina",
-  "about": "Soy un desarrollador Frontend con experiencia en la industria creando sitios Web.",
+  "location": "Mar del Plata, Buenos Aires, Argentina",
+  "about": "Soy un desarrollador Frontend con experiencia creando y desarrollando sitios Web con frameworks como Bootstrap, Wordpress y React, entre otros. Me especializo en UX/UI y en 2021 decidí incorporar credenciales que respalden mi formación. Por esta razón el año pasado decidí comenzar el programa nacional #ArgentinaPrograma. Actualmente me encuentro cursando la segunda etapa #YoProgramo para poder convertirme en desarrollador FullStack.",
   "experience": [{
       "position": "FrontEnd Developer",
       "company": "Apple",
@@ -53,11 +53,11 @@
       }
   ],
   "projects": [{
-      "Name": "Spotify",
+      "name": "Spotify",
       "tasks": "Participación en el desarrollo del FrontEnd de la plataforma para Latam"
   },
   {
-      "Name": "Apple",
+      "name": "Apple",
       "tasks": "Participación en el desarrollo del FrontEnd de la página web para Latam"
   }
 ]
