@@ -6,12 +6,12 @@
           <ul class="list-unstyled">
               <div class="bd-edit"><button type="button" class="btn-edit" title="" data-original-title="editar"><i class="fa fa-pen"></i></button></div>
               <div class="bd-edit"><button type="button" class="btn-delete" title="" data-original-title="delete"><i class="fa fa-trash"></i></button></div>
-              <li class="flex-column flex-md-row media">
+              <li class="flex-column flex-md-row media" *ngFor="let exp of expList">
                 <img class="align-self-center mr-4" src="https://picsum.photos/64/64" alt="Generic placeholder image">
                 <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
-                  <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aperiam officia accusamus.</p>
-                  <h6 class="">2012 - 2018</h6>
+                  <h5 class="mt-0 mb-1">{{exp.position}}</h5>
+                  <p class="mb-1">{{exp.mode}}</p>
+                  <h6 class=""><time>{{exp.start}}</time> - <time>{{exp.end}}</time></h6>
                 </div>
               </li>
           </ul>
@@ -21,12 +21,12 @@
           <ul class="list-unstyled">
               <div class="bd-edit"><button type="button" class="btn-edit" title="" data-original-title="editar"><i class="fa fa-pen"></i></button></div>
               <div class="bd-edit"><button type="button" class="btn-delete" title="" data-original-title="delete"><i class="fa fa-trash"></i></button></div>
-              <li class="flex-column flex-md-row media">
+              <li class="flex-column flex-md-row media" *ngFor="let edu of eduList">
                 <img class="align-self-center mr-4" src="https://picsum.photos/64/64" alt="Generic placeholder image">
                 <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
-                  <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aperiam officia accusamus.</p>
-                  <h6 class="">2012 - 2018</h6>
+                  <h5 class="mt-0 mb-1">{{edu.school}}</h5>
+                  <p class="mb-1">{{edu.title}}</p>
+                  <h6 class=""><time>{{edu.start}}</time> - <time>{{edu.end}}</time></h6>
                 </div>
               </li>
               <!-- <div class="bd-edit"><button type="button" class="btn-edit" title="" data-original-title="editar"><i class="fa fa-pen"></i></button></div>
