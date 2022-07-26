@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
       position:['', [Validators.required]],
       location:['', [Validators.required]],
       urlImage:['https://', [Validators.required, Validators.pattern('https?://.+')]],
-      // about:['', [Validators.required]],
+      about:['', [Validators.required, Validators.maxLength(450)]],
     })
    }
 
@@ -38,9 +38,9 @@ export class HeaderComponent implements OnInit {
       let position=this.form.controls["position"].value;
       let location=this.form.controls["location"].value;
       let urlImage=this.form.controls["urlImage"].value;
-      // let about=this.form.controls["about"].value;
+      let about=this.form.controls["about"].value;
 
-      let editarPersona = new Persona(this.persona.id, fullName, position, location, urlImage);
+      let editarPersona = new Persona(this.persona.id, fullName, position, location, urlImage, about);
 
 
       this.personaService.editarDatosPersona(editarPersona).subscribe(data => {
@@ -64,6 +64,7 @@ export class HeaderComponent implements OnInit {
     this.form.get("position")?.setValue(this.persona.position);
     this.form.get("location")?.setValue(this.persona.location);
     this.form.get("urlImage")?.setValue(this.persona.urlImage);
+    this.form.get("about")?.setValue(this.persona.about);
 
   }
 

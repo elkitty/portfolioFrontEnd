@@ -5,16 +5,16 @@ export class Persona {
   position: string;
   location: string;
   urlImage: string;
-  // public about: string;
+  about: string;
 
 
-  constructor(id: number, fullName: string, position: string, location: string, urlImage: string) {
-    this.id = id;
+  constructor(id: number, fullName: string, position: string, location: string, urlImage: string, about : string) {
+    this.id= id;
     this.fullName = fullName;
     this.position = position;
     this.location = location;
     this.urlImage = urlImage;
-    // this.about = urlImage;
+    this.about = about;
 
   }
   // Setters

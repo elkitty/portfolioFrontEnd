@@ -23,8 +23,8 @@
           </div>
           <!-- acerca de mi -->
           <div class="col-lg-8">
-            <div class="bd-edit"><button type="button" class="btn-edit" title="" data-toggle="modal" data-target="#edit-persona_about"><i class="fa fa-pen"></i></button></div>
-            <div class="bd-edit"><button type="button" class="btn-delete" title="" data-original-title="delete"><i class="fa fa-trash"></i></button></div>
+            <!-- <div class="bd-edit"><button type="button" class="btn-edit" title="" data-toggle="modal" data-target="#edit-persona_about"><i class="fa fa-pen"></i></button></div>
+            <div class="bd-edit"><button type="button" class="btn-delete" title="" data-original-title="delete"><i class="fa fa-trash"></i></button></div> -->
             <div class="h-100 bg-light">
               <h3>Acerca de mi</h3>
               <p>{{persona.about}}</p>
@@ -68,6 +68,10 @@
             <label for="urlImage">URL foto de perfil</label>
             <input type="text" class="form-control" id="urlImage" formControlName="urlImage">
           </div>
+          <div class="form-group">
+            <label for="urlImage">Editar Acerca de mi</label>
+            <textarea type="text" class="form-control" id="about" rows="3" formControlName="about"></textarea>
+          </div>
         </form>
         <div class="modal-footer">
           <button type="button" id="cerrarEditPersona_Info" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -79,7 +83,7 @@
 </div>
 
 <!-- modal edit persona: acerca de mi -->
-<div class="modal fade" id="edit-persona_about" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="edit-persona_about" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -89,18 +93,17 @@
         </button>
       </div>
       <div class="modal-body">
-        <form>
+        <form [formGroup]="form">
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Editar Acerca de mi</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-              placeholder="Soy un desarrollador Frontend con experiencia creando y desarrollando sitios Web con frameworks como Bootstrap, Wordpress y React, entre otros. Me especializo en UX/UI y en 2021 decidí incorporar credenciales que respalden mi formación. Por esta razón el año pasado decidí comenzar el programa nacional #ArgentinaPrograma. Actualmente me encuentro cursando la segunda etapa #YoProgramo para poder convertirme en desarrollador FullStack."></textarea>
+            <label for="urlImage">Editar Acerca de mi</label>
+            <input type="text" class="form-control" id="about" formControlName="about">
           </div>
         </form>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn btn-primary" (click)="guardarEditPersona_Info()">Guardar</button>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div> -->
