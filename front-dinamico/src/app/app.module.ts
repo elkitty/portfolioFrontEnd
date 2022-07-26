@@ -9,6 +9,7 @@ import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProjectsComponent } from './componentes/projects/projects.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EducationComponent } from './componentes/education/education.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ExperienceComponent,
     SkillsComponent,
     ProjectsComponent,
+    EducationComponent,
   ],
   imports: [
     BrowserModule,

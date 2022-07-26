@@ -1,17 +1,17 @@
-<!-- experiencia -->
-<section class="p-5" id="experience">
+<section class="p-5" id="education">
+  <!-- education -->
   <div class="container">
-    <h1 class="mb-4">Experiencia</h1>
+    <h1 class="mb-4" id="education">Educación</h1>
     <div class="flex-row">
       <ul class="list-unstyled">
         <div class="bd-edit"><button type="button" class="btn-edit" title="" data-original-title="editar"><i class="fa fa-pen"></i></button></div>
         <div class="bd-edit"><button type="button" class="btn-delete" title="" data-original-title="delete"><i class="fa fa-trash"></i></button></div>
-        <li class="flex-column flex-md-row media" *ngFor="let exp of expList">
-          <img class="align-self-center mr-4" [src]="exp.img" alt="Generic placeholder image">
+        <li class="flex-column flex-md-row media" *ngFor="let edu of eduList">
+          <img class="align-self-center mr-4" [src]="edu.img" alt="Generic placeholder image">
           <div class="media-body">
-            <h5 class="mt-0 mb-1">{{exp.position}}</h5>
-            <p class="mb-1">{{exp.mode}}</p>
-            <h6 class=""><time>{{exp.start}}</time> - <time>{{exp.end}}</time></h6>
+            <h5 class="mt-0 mb-1">{{edu.school}}</h5>
+            <p class="mb-1">{{edu.title}}</p>
+            <h6 class=""><time>{{edu.start}}</time> - <time>{{edu.end}}</time></h6>
           </div>
         </li>
       </ul>
