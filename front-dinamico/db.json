@@ -1,0 +1,140 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "fullName": "Lucas",
+      "position": "Cocinero",
+      "location": "moron",
+      "urlImage": "https://i.imgur.com/pUScccc",
+      "id": 12
+    },
+    {
+      "fullName": "Lucas",
+      "position": "taxiboy",
+      "location": "moron",
+      "urlImage": "https://i.imgur.com/pUScccc",
+      "id": 13
+    },
+    {
+      "fullName": "Lucas",
+      "position": "taxiboy",
+      "location": "San Isidro",
+      "urlImage": "https://i.imgur.com/pUSfuMQ.jpg",
+      "id": 14
+    },
+    {
+      "fullName": "Matias Min",
+      "position": "Arquitecto",
+      "location": "San Isidro",
+      "urlImage": "https://i.imgur.com/pUSfuMQ.jpg",
+      "id": 15
+    },
+    {
+      "fullName": "Mariano Mello",
+      "position": "Repostero",
+      "location": "Mar del Plata, Buenos Aires, Argentina",
+      "urlImage": "https://i.imgur.com/pUSfuMQ.jpg",
+      "id": 16
+    },
+    {
+      "fullName": "Mariano Mello",
+      "position": "Fontanero",
+      "location": "Mar del Plata, Buenos Aires, Argentina",
+      "urlImage": "https://i.imgur.com/pUSfuMQ.jpg",
+      "id": 17
+    },
+    {
+      "fullName": "Erin Michelle Lexo",
+      "position": "Novia de Alesso",
+      "location": "Mónaco",
+      "urlImage": "https://i.imgur.com/pUSfuMQ.jpg",
+      "id": 18
+    },
+    {
+      "fullName": "Naomi Campbell",
+      "position": "Novia de Alesso",
+      "location": "Mónaco",
+      "urlImage": "https://i.imgur.com/pUSfuMQ.jpg",
+      "id": 19
+    },
+    {
+      "fullName": "Naomi Campbell",
+      "position": "Novia de Alesso",
+      "location": "Mónaco",
+      "urlImage": "https://www.google.com/search?q=naomi+campbell&rlz=1C5CHFA_enAR855AR857&sxsrf=ALiCzsYy1iSV-y9t0cU1CM2d9FjH00Js8w:1658436439184&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi_9NuW7Yr5AhXIALkGHVxIA2kQ_AUoAXoECAIQAw&biw=1440&bih=789&dpr=2#imgrc=NEerlSH8PpqBtM",
+      "id": 20
+    },
+    {
+      "fullName": "Naomi Campbell",
+      "position": "Novia de Alesso",
+      "location": "Mónaco",
+      "urlImage": "https://www.clarin.com/espectaculos/naomi-campbell-demandada-ex-novio-3-millones-dolares_0_y7jB73Jd5.html",
+      "id": 21
+    },
+    {
+      "fullName": "Naomi Campbell",
+      "position": "Novia de Alesso",
+      "location": "Mónaco",
+      "urlImage": "https://phantom-marca.unidadeditorial.es/c06ad3d0d948bba969ab4bef6587c4ac/resize/1320/f/webp/assets/multimedia/imagenes/2022/06/14/16551962930432.jpg",
+      "id": 22
+    },
+    {
+      "fullName": "Naomi Campbell",
+      "position": "Novia de Alesso",
+      "location": "Mónaco",
+      "urlImage": "https://i.imgur.com/pUSfuMQ.jpg",
+      "id": 23
+    },
+    {
+      "fullName": "Mariano Mello",
+      "position": "Web",
+      "location": "Mar del Plata, Buenos Aires, Argentina",
+      "urlImage": "https://i.imgur.com/pUSfuMQ.jpg",
+      "id": 24
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

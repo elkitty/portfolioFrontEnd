@@ -1,34 +1,106 @@
 <!-- header -->
 <header class="top-count-outer" id="hero-section">
   <div class="hero-wrapper">
-      <div class="card hovercard bg-light">
-          <div class="cardheader"></div>
-          <div class="container">
-              <div class="row">
-                  <!-- <div class="bd-edit"><button type="button" class="btn-edit btn-edit-profile" title="" data-original-title="editar"><i class="fa fa-pen"></i></button></div> -->
-                  <div class="avatar">
-                      <img [src]="miPortfolio.image">
-                  </div>
-              </div>
-              <div class="row info">
-                  <div class="col-lg-4 h-100">
-                      <div class="bd-edit"><button type="button" class="btn-edit" title="" data-toggle="modal" data-target="#edit-personal_info"><i class="fa fa-pen"></i></button></div>
-                      <div class="bg-light ">
-                          <h1>{{miPortfolio.name}}</h1>
-                          <h3><b>{{miPortfolio.position}}</b></h3>
-                          <p>{{miPortfolio.location}}</p>
-                      </div>
-                  </div>
-                  <div class="col-lg-8">
-                      <div class="bd-edit"><button type="button" class="btn-edit" title="" data-original-title="editar"><i class="fa fa-pen"></i></button></div>
-                      <div class="bd-edit"><button type="button" class="btn-delete" title="" data-original-title="delete"><i class="fa fa-trash"></i></button></div>
-                      <div class="h-100 bg-light">
-                          <h3>Acerca de mi</h3>
-                          <p>{{miPortfolio.about}}</p>
-                      </div>
-                  </div>
-              </div>
+    <div class="card hovercard bg-light">
+      <div class="cardheader"></div>
+      <div class="container">
+        <div class="row">
+          <!-- <div class="bd-edit"><button type="button" class="btn-edit btn-edit-profile" title="" data-original-title="editar"><i class="fa fa-pen"></i></button></div> -->
+          <div class="avatar">
+            <img [src]="persona.urlImage">
           </div>
+        </div>
+        <div class="row info">
+          <div class="col-lg-4 h-100">
+            <div class="bd-edit">
+              <button *ngIf="usuarioAutenticado" type="button" class="btn-edit" title="" data-toggle="modal" data-target="#edit-persona_info" (click)="mostrarPlaceholderEditPersonaInfo()"><i class="fa fa-pen"></i></button>
+            </div>
+            <div class="bg-light ">
+              <h1>{{persona.fullName}}</h1>
+              <h3><b>{{persona.position}}</b></h3>
+              <p>{{persona.location}}</p>
+            </div>
+          </div>
+          <!-- acerca de mi -->
+          <div class="col-lg-8">
+            <div class="bd-edit"><button type="button" class="btn-edit" title="" data-toggle="modal" data-target="#edit-persona_about"><i class="fa fa-pen"></i></button></div>
+            <div class="bd-edit"><button type="button" class="btn-delete" title="" data-original-title="delete"><i class="fa fa-trash"></i></button></div>
+            <div class="h-100 bg-light">
+              <h3>Acerca de mi</h3>
+              <p>{{persona.about}}</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
 </header>
+
+<!-- modal edit persona: info -->
+<div class="modal fade" id="edit-persona_info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar datos personales</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="form">
+          <div class="form-group">
+            <label for="fullName">Nombre</label>
+            <input type="text" class="form-control" id="fullName" formControlName="fullName">
+            <div *ngIf="fullName?.invalid && (fullName?.dirty || fullName?.touched)" class="alert">
+              <div *ngIf="fullName?.errors?.['required']" class="text-danger">El nombre y apellido es obligatorio.</div>
+              <div *ngIf="fullName?.errors?.['minlength']" class="text-danger">El nombre y apellido debe tener un mínimo de 4 caracteres.</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="position">Posición</label>
+            <input type="text" class="form-control" id="position" formControlName="position">
+          </div>
+          <div class="form-group">
+            <label for="location">Residencia</label>
+            <input type="text" class="form-control" id="location" formControlName="location">
+          </div>
+          <div class="form-group">
+            <label for="urlImage">URL foto de perfil</label>
+            <input type="text" class="form-control" id="urlImage" formControlName="urlImage">
+          </div>
+        </form>
+        <div class="modal-footer">
+          <button type="button" id="cerrarEditPersona_Info" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" (click)="guardarEditPersona_Info()">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal edit persona: acerca de mi -->
+<div class="modal fade" id="edit-persona_about" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar acerca de mi</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Editar Acerca de mi</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+              placeholder="Soy un desarrollador Frontend con experiencia creando y desarrollando sitios Web con frameworks como Bootstrap, Wordpress y React, entre otros. Me especializo en UX/UI y en 2021 decidí incorporar credenciales que respalden mi formación. Por esta razón el año pasado decidí comenzar el programa nacional #ArgentinaPrograma. Actualmente me encuentro cursando la segunda etapa #YoProgramo para poder convertirme en desarrollador FullStack."></textarea>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

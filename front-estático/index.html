@@ -32,6 +32,7 @@
         </div>
     </nav>
 
+    <!-- personal info -->
     <header class="top-count-outer" id="hero-section">
         <div class="hero-wrapper">
             <div class="card hovercard bg-light">
@@ -52,8 +53,9 @@
                                 <p>Mar del Plata, Buenos Aires, Argentina</p>
                             </div>
                         </div>
+                        <!-- acerca de mi -->
                         <div class="col-lg-8">
-                            <div class="bd-edit"><button type="button" class="btn-edit" title="" data-original-title="editar"><i class="fa fa-pen"></i></button></div>
+                            <div class="bd-edit"><button type="button" class="btn-edit" data-toggle="modal" data-target="#edit-acerca_de_mi"><i class="fa fa-pen"></i></button></div>
                             <div class="bd-edit"><button type="button" class="btn-delete" title="" data-original-title="delete"><i class="fa fa-trash"></i></button></div>
                             <div class="h-100 bg-light">
                                 <h3>Acerca de mi</h3>                                    
@@ -212,7 +214,7 @@
         </div>
     </div>
 
-    <!-- Modal edit personal info -->
+    <!-- modal edit personal info -->
     <div class="modal fade" id="edit-personal_info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -240,14 +242,40 @@
                             <label for="formGroupExampleInput2">URL foto de perfil</label>
                             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="https://">
                         </div>
-                        <button type="submit" class="btn btn-primary mr-2">Guardar</button>
-                        <button type="submit" class="btn btn-secondary">Salir</button>
-                      </form>
+                        <!-- <button type="submit" class="btn btn-primary mr-2">Guardar</button>
+                        <button type="submit" class="btn btn-secondary">Salir</button> -->
+                    </form>
                 </div>
-                <!-- <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-                </div> -->
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal acerca de mi -->
+    <div class="modal fade" id="edit-acerca_de_mi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar acerca de mi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Editar Acerca de mi</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Soy un desarrollador Frontend con experiencia creando y desarrollando sitios Web con frameworks como Bootstrap, Wordpress y React, entre otros. Me especializo en UX/UI y en 2021 decidí incorporar credenciales que respalden mi formación. Por esta razón el año pasado decidí comenzar el programa nacional #ArgentinaPrograma. Actualmente me encuentro cursando la segunda etapa #YoProgramo para poder convertirme en desarrollador FullStack."></textarea>
+                        </div>
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

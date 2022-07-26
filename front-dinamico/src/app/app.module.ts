@@ -8,6 +8,7 @@ import { ExpeduComponent } from './componentes/expedu/expedu.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProjectsComponent } from './componentes/projects/projects.component';
 import {HttpClientModule} from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,12 @@ import {HttpClientModule} from '@angular/common/http';
     HeaderComponent,
     ExpeduComponent,
     SkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
