@@ -1,13 +1,12 @@
 export class Experience {
-  id: number;
+  id?: number;
   urlImageEx: string;
   positionEx: string;
   modeEx: string;
-  startEx: number;
-  endEx: number;
+  startEx: string;
+  endEx: string;
 
-  constructor(id: number, urlImageEx: string, positionEx: string, modeEx: string, startEx: number, endEx: number) {
-    this.id = id;
+  constructor(urlImageEx: string, positionEx: string, modeEx: string, startEx: string, endEx: string) {
     this.urlImageEx = urlImageEx;
     this.positionEx = positionEx;
     this.modeEx = modeEx;

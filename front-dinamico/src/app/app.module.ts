@@ -8,8 +8,13 @@ import { ExperienceComponent } from './componentes/experience/experience.compone
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProjectsComponent } from './componentes/projects/projects.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EducationComponent } from './componentes/education/education.component';
+import { AddExperienceComponent } from './componentes/experience/add-experience.component';
+import { HomeComponent } from './componentes/home/home.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PruebaComponent } from './componentes/prueba/prueba.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +25,17 @@ import { EducationComponent } from './componentes/education/education.component'
     SkillsComponent,
     ProjectsComponent,
     EducationComponent,
+    AddExperienceComponent,
+    HomeComponent,
+    LoginComponent,
+    PruebaComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

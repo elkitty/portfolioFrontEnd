@@ -2,8 +2,11 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "fullName": "Mariano Mello",
+      "position": "Web Developer",
+      "location": "Mar del Plata, Buenos Aires, Argentina",
+      "urlImage": "https://i.imgur.com/pUSfuMQ.jpg",
+      "about": "Soy un desarrollador Frontend con experiencia creando y desarrollando sitios Web con frameworks como Bootstrap, Wordpress y React, entre otros. Me especializo en UX/UI y en 2021 decidí incorporar credenciales que respalden mi formación profesional.."
     },
     {
       "id": 2
@@ -173,6 +176,14 @@
       "urlImage": "https://i.imgur.com/pUSfuMQ.jpg",
       "about": "Soy un desarrollador Frontend con experiencia creando y desarrollando sitios Web con frameworks como Bootstrap, Wordpress y React, entre otros. Me especializo en UX/UI y en 2021 decidí incorporar credenciales que respalden mi formación. Por esta razón el año pasado decidí comenzar el programa nacional #ArgentinaPrograma. Actualmente me encuentro cursando la segunda etapa #YoProgramo para poder convertirme en desarrollador FullStack.",
       "id": 30
+    },
+    {
+      "fullName": "Mariano Mello",
+      "position": "Web Developer",
+      "location": "Mar del Plata, Buenos Aires, Croatia",
+      "urlImage": "https://i.imgur.com/pUSfuMQ.jpg",
+      "about": "Soy un desarrollador Frontend con experiencia creando y desarrollando sitios Web con frameworks como Bootstrap, Wordpress y React, entre otros. Me especializo en UX/UI y en 2021 decidí incorporar credenciales que respalden mi formación. Por esta razón el año pasado decidí comenzar el programa nacional #ArgentinaPrograma. Actualmente me encuentro cursando la segunda etapa #YoProgramo para poder convertirme en desarrollador FullStack.",
+      "id": 31
     }
   ],
   "comments": [

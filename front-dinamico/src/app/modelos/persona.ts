@@ -1,6 +1,6 @@
 
 export class Persona {
-  id: number;
+  id?: number;
   fullName: string;
   position: string;
   location: string;
@@ -8,8 +8,8 @@ export class Persona {
   about: string;
 
 
-  constructor(id: number, fullName: string, position: string, location: string, urlImage: string, about : string) {
-    this.id= id;
+  constructor( fullName: string, position: string, location: string, urlImage: string, about: string) {
+    // this.id= id;
     this.fullName = fullName;
     this.position = position;
     this.location = location;

@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div>
+      <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+        <div class="form-group">
+          <label for="positionEx">Puesto</label>
+          <input type="text" class="form-control" id="positionEx" [(ngModel)]="positionEx" [ngModelOptions]="{standalone: true}" required>
+
+          <label for="modeEx">Modalidad</label>
+          <input type="text" class="form-control" id="modeEx" [(ngModel)]="modeEx" [ngModelOptions]="{standalone: true}"  required>
+
+          <label for="startEx">Desde</label>
+          <input type="text" class="form-control" id="startEx" [(ngModel)]="startEx" [ngModelOptions]="{standalone: true}" required>
+
+          <label for="endEx">Hasta</label>
+          <input type="text" class="form-control" id="endEx" [(ngModel)]="endEx" [ngModelOptions]="{standalone: true}" required>
+
+          <label for="urlImageEx">URL de la imagen</label>
+          <input type="text" class="form-control" id="urlImageEx" [(ngModel)]="urlImageEx" [ngModelOptions]="{standalone: true}" required>
+
+
+        </div>
+        <button class="btn btn-primary">Agregar experiencia</button>
+
+      </form>
+    </div>
+
+  </div>
+</div>

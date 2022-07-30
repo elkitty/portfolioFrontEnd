@@ -1,20 +1,80 @@
-<section class="p-5" id="education">
+<section class="p-5">
   <!-- education -->
   <div class="container">
-    <h1 class="mb-4" id="education">Educación</h1>
+    <div class="mb-4">
+      <h1 class="d-inline">Educación</h1>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addEducationModal">
+        <a class="">Agregar Educación<span class="sr-only">(current)</span></a>
+      </button>
+    </div>
     <div class="flex-row">
       <ul class="list-unstyled">
-        <div class="bd-edit"><button type="button" class="btn-edit" title="" data-original-title="editar"><i class="fa fa-pen"></i></button></div>
-        <div class="bd-edit"><button type="button" class="btn-delete" title="" data-original-title="delete"><i class="fa fa-trash"></i></button></div>
-        <li class="flex-column flex-md-row media" *ngFor="let edu of eduList">
-          <img class="align-self-center mr-4" [src]="edu.img" alt="Generic placeholder image">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">{{edu.school}}</h5>
-            <p class="mb-1">{{edu.title}}</p>
-            <h6 class=""><time>{{edu.start}}</time> - <time>{{edu.end}}</time></h6>
+        <li class="flex-column flex-md-row media mb-4" *ngFor="let education of educationList">
+          <div class="bd-edit">
           </div>
+          <img class="align-self-center mr-4" [src]="education.urlImageEd" alt="Generic placeholder image">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">{{education.schoolEd}}</h5>
+            <p class="mb-1">{{education.titleEd}}</p>
+            <h6 class=""><time>{{education.startEd}}</time> - <time>{{education.endEd}}</time></h6>
+          </div>
+          <button type="button" class="btn btn-primary btn-sm mr-2" ><i class="fa fa-pen"></i></button>
+          <button type="button" class="btn btn-secondary btn-sm" ><i class="fa fa-trash"></i></button>
         </li>
       </ul>
     </div>
   </div>
 </section>
+
+
+
+  <!-- modal añadir educacion -->
+
+  <!-- <div class="modal fade" id="addEducationModal" tabindex="-1" aria-labelledby="addEducationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addEducationModalLabel">Añadir educación</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form #addForm="ngForm" (ngSubmit)="AddEducation(addForm)">
+            <div class="form-group">
+              {{addForm.value | json}}
+              <label for="schoolEdu">Establecimiento Edcuativo</label>
+              <input class="form-control" id="schoolEdu" placeholder="Universidad de Buenos Aires" name="schoolEdu" ngModel>
+
+              <label for="titleEdu">Título obtenido</label>
+              <input type="text" class="form-control" id="startEdu" class="form-control" id="tituloEdu" placeholder="Título Obtenido" name="tituloEdu" ngModel>
+
+              <label for="startEdu">Año de inicio</label>
+              <input type="text" class="form-control" id="startEdu" placeholder="Año de inicio"  name="startEdu" ngModel>
+
+              <label for="endEdu">Año de finalización</label>
+              <input type="text" class="form-control" id="endEdu" class="form-control" id="endEdu" placeholder="Año de finalización" name="endEdu" ngModel>
+
+              <label for="urlImageEdu">URL foto institución</label>
+              <input type="text" class="form-control" id="urlImageEdu" placeholder="http://..." name="urlImageEdu" ngModel>
+            </div>
+          </form>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" id="cerrarAddEducationForm" data-dismiss="modal">Cerrar</button>
+              <button [disabled]="addForm.invalid "type="submit" class="btn btn-primary" (click)="AddEducation(addForm)">Guardar Cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+
